@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <title>Запрос 1</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Запрос №1</h2>
+        <p> Сведения о заказах оборудования за указанный год</p>
+        <br>
+
+        <form class="form-container" action="request1.php" method="GET">
+            <label for="year_id">Введите год:</label>
+            <input type="text" name="o_year" id="year_id" placeholder="2017" required>
+            <input type="submit" name="send" value="Отправить" class="button">
+        </form>
+        <br>
+        <a href="../menu/menu.php" class="button">В меню</a>
+        <a href="?out" class="button" name="out">Выход</a>
+    </div>
+</body>
+</html>

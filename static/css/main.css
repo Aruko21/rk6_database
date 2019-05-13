@@ -1,0 +1,161 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    /* sans-serif - семейство шрифтов */
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3e383f;
+    text-align: center;
+    background-color: #e7dde9;
+}
+
+input[type=submit] {
+    outline: none;
+    border: none;
+}
+
+input[type=text] {
+    margin: 5px;
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 180px;
+    /*height: 25px;*/
+    border: #37376f 1px solid;
+    outline: none;
+    border-radius: 0.25rem;
+    padding: 5px;
+}
+
+.label-input input[type=text] {
+    display: inline;
+}
+
+input:focus:required:invalid {
+    border-color: red;
+}
+
+input:focus:valid {
+    border-color: green;
+}
+
+.container {
+    width: 85%;
+    height: 100%;
+    /*background-color: #d8ceda;*/
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container a {
+    text-decoration: none;
+    /*color: inherit;*/
+}
+
+.container h2 {
+    color: #412041;
+    margin-top: 5px;
+    margin-bottom: 21px;
+}
+
+.nav {
+    padding: 6px;
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 5px;
+    /*Прозрачность*/
+    opacity: .50;
+    /* Плавность. ease - "разгон" посередине */
+    transition: all .5s ease;
+}
+
+/* Наведение на ссылку */
+.nav a:hover {
+    opacity: 1;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #6665c9;
+    color: #bcb8ff;
+    /*border: 2px outset #37376f;*/
+    /* первое значение - верх-низ, второе - лево-право */
+    padding: 2px 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    min-width: 120px;
+    transition: all .5s ease;
+    /* нужно для работоспособности min-width */
+    display: inline-block;
+}
+
+.button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.form-container {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-container .button {
+    display: inline-block;
+    /*width: 100%;*/
+    height: calc(2rem + 2px);
+    /*padding: 0.375rem 0.75rem;*/
+    font-size: 1rem;
+    font-weight: 400;
+    /*line-height: 1.5;*/
+    /*color: #495057;*/
+    /*background-color: #fff;*/
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.form-container .label-col {
+    margin: 2px 4px;
+    min-width: 150px;
+    text-align: right;
+    /* display нужен для того, чтобы строчному элементу присвоить значение ширины */
+    display: inline-block;
+}
+
+table.result_set {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+table.result_set thead {
+    font-size: 1.6rem;
+    opacity: .9;
+}
+
+table.result_set tbody {
+    opacity: .7;
+}
+
+table.result_set td {
+    padding: 10px;
+}
+
+p.report {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
